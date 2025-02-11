@@ -12,6 +12,8 @@ require_once HELPER . "/helpers.php";
 
 
 $app = new Application();
+require_once CONFIG . '/routes.php';
+$app->run();
 
 
 

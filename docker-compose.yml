@@ -4,6 +4,7 @@ services:
       context: ./docker/php
     volumes:
       - './:/var/www/html'
+      - '~/.gitconfig:/home/myuser/.gitconfig'
     environment:
       - COMPOSER_ALLOW_SUPERUSER=1
     restart: unless-stopped

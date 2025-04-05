@@ -26,4 +26,7 @@ RUN groupadd -g 1001 myuser && \
     usermod -aG sudo myuser && \
     echo 'myuser:mypass' | chpasswd
 
+# Настраиваем Git глобально для пользователя myuser
 USER myuser
+RUN git config --global user.name "AxlexxBelous" && \
+    git config --global user.email "connectionwithme@gmail.com"

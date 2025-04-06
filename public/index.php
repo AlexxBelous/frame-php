@@ -31,4 +31,4 @@ $app->run();
 
 
 
-dump("Time: " . microtime(true) - $startFrame);
+//dump("Time: " . microtime(true) - $startFrame);

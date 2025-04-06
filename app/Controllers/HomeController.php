@@ -4,8 +4,10 @@ namespace App\Controllers;
 
 class HomeController
 {
-    public function test()
+    public function index()
     {
-        echo "This is test";
+        return app()->view->render('home',
+            ['title' => 'Home page']
+        );
     }
 }
